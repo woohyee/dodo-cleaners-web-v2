@@ -293,7 +293,7 @@ function Services() {
         </div>
 
         {/* Clothesline */}
-        <div style={{ overflowX: mob ? "auto" : "hidden", overflowY: "hidden", WebkitOverflowScrolling:"touch", paddingTop:6, paddingBottom:12 }}>
+        <div style={{ overflowX: mob ? "auto" : "hidden", overflowY: "hidden", WebkitOverflowScrolling:"touch", paddingTop:6, paddingBottom:12, paddingLeft: mob ? 0 : 28, paddingRight: mob ? 0 : 28 }}>
           <div style={{ position:"relative", minWidth: mob ? 640 : "unset", display:"flex", flexDirection:"column", gap: mob ? 48 : 72 }}>
             {[[0,4],[4,8]].map(([start,end]) => (
               <div key={start} style={{ position:"relative" }}>
