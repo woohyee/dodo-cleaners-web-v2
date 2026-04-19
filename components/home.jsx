@@ -62,16 +62,16 @@ function Hero({ logoVariant }) {
           height: 76, display: "flex", alignItems: "center",
           justifyContent: "space-between",
         }}>
-          <Wordmark markSize={24} variant={logoVariant} />
-          <nav style={{ display: mob ? "none" : "flex", gap: 36 }}>
+          <Wordmark markSize={34} variant={logoVariant} />
+          <nav style={{ display: mob ? "none" : "flex", gap: 40 }}>
             {[["Services","services.html"],["Pricing","pricing.html"],["Event","event.html"],["Contact","contact.html"]].map(([l,h]) => (
               <a key={l} href={h} style={{
-                fontFamily:"'Inter',sans-serif", fontSize:13,
-                color: INK, textDecoration:"none", opacity:.65,
+                fontFamily:"'Inter',sans-serif", fontSize:16, fontWeight:500,
+                color: INK, textDecoration:"none", opacity:.75,
                 transition:"opacity 160ms",
               }}
               onMouseEnter={e=>e.target.style.opacity=1}
-              onMouseLeave={e=>e.target.style.opacity=.65}
+              onMouseLeave={e=>e.target.style.opacity=.75}
               >{l.toLowerCase()}</a>
             ))}
           </nav>

@@ -120,15 +120,12 @@ function Wordmark({ markSize = 28, stackGap = 1, letterSpacing = "-0.02em", vari
       <span style={{
         fontFamily: "'Newsreader', serif",
         fontWeight: 400,
-        fontSize: markSize * 0.55,
-        lineHeight: 1.02,
+        fontSize: markSize * 0.9,
+        lineHeight: 1,
         letterSpacing,
-        display: "inline-flex",
-        flexDirection: "column",
-        paddingTop: 1,
+        whiteSpace: "nowrap",
       }}>
-        <span>dodo</span>
-        <span style={{ marginTop: stackGap }}>cleaners</span>
+        dodo cleaners
       </span>
     </a>
   );

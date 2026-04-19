@@ -11,7 +11,7 @@ function SiteHeader({ active = "home", logoVariant = "character" }) {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Wordmark markSize={26} variant={logoVariant} />
+        <Wordmark markSize={34} variant={logoVariant} />
         <nav className="site-nav" aria-label="Primary">
           {NAV.map((item) => (
             <a
